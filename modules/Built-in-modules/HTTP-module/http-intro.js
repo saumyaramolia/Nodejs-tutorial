@@ -17,7 +17,7 @@ const server1 = http.createServer((req,res) => {
     res.end();
 })
 
-server1.listen(5000); // This is very important
+server1.listen(5000); // This is very important (& Also listen() is asynchronous)
 
 /* In server.listen() we have input port number 
     Web-server always listen for requests.

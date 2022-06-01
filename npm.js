@@ -25,4 +25,16 @@
 
 // Actual syntax of how to use external packages (Basically same)
 
-const _ = require('lodash'); // _ this is common convention
+const _ = require('lodash'); // "_" this is common convention
+
+/* Nodemon is a module which restart our project and after that no more 
+    typing "node <fileName>" every single time (Recommended only for development process)
+    To install Nodemon:
+        Terminal type "npm i nodemon -D" (Always intall it locally !globally)
+    
+    The reason why use it only for development process not when push to (digitalocean || Heroku)
+*/
+
+/* SIDE NOTE to uninstall npm packages 
+    Command is "npm uninstall <packageName>"
+*/
