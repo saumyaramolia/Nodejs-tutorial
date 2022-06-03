@@ -34,3 +34,21 @@ readFile('/Users/saumyaramolia/OneDrive/MERN/NodeJS/modules/Built-in-modules/con
     })
 })
 console.log('Start the next one');
+
+// ALTERNATE Way to do the above setup (Much better & easier way)
+
+const {readFile, writeFile} = require('fs').promises;
+
+const start = async() => {
+    try {
+        const first = await readFile('/Users/saumyaramolia/OneDrive/MERN/NodeJS/modules/Built-in-modules/content/first.txt', 'utf8')
+        const second = await readFile('/Users/saumyaramolia/OneDrive/MERN/NodeJS/modules/Built-in-modules/content/second.txt', 'utf8')
+        await writeFile('/Users/saumyaramolia/OneDrive/MERN/NodeJS/modules/Built-in-modules/content/result.txt', `Hello There ${first} and ${second}`)
+        console.log(first,second);
+    } catch (error) {
+        console.log(error);
+    }    
+}
+
+start();
+
