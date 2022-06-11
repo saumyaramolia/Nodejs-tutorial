@@ -11,5 +11,12 @@
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.16"
-  }
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+    "nodemonConfig": {
+      "ignore": ["test/*", "docs/*"],
+      "delay": 2500
+    }
 }
